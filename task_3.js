@@ -3,7 +3,7 @@
 function hariGanjilGenap(){
     return new Promise((resolve, reject) => {
         const date = new Date();
-        if(date.getDate()%2 === 0){
+        if(date.getDate()%2 === 1){
             resolve("Tanggal ganjil, kamu tidak kena tilang!");
         }else{
             reject(new Error("Tanggal genap, kamu kena tilang!"));
